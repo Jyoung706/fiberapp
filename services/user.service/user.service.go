@@ -12,3 +12,11 @@ func CreateUser(userForm userModel.User) string {
 func GetUser(id int) userModel.User {
 	return userRepository.GetUser(id)
 }
+
+func UpdateUser(id int, userForm userModel.User) string {
+	return userRepository.UpdateUser(id, userForm)
+}
+
+func DeleteUser(id int) string {
+	return userRepository.DeleteUser(id)
+}

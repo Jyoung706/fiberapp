@@ -9,4 +9,6 @@ import (
 func UserRouter(app *fiber.App) {
 	app.Post("/user", userController.CreateUser)
 	app.Get("/user/:id", userController.GetUser)
+	app.Patch("/user/:id", userController.UpdateUser)
+	app.Delete("/user/:id", userController.DeleteUser)
 }
